@@ -20,3 +20,11 @@ Mint Page: https://www.moodiez.art/
 Collection: https://paintswap.finance/marketplace/fantom/collections/moodiez/nfts
 
 Font: https://www.dafont.com/moody-babe.font
+
+Forthcoming Features:
+Highlighting the cards depending on the player that matched them
+The player can input a name instead of the default "Player 1" and "Player 2"
+Have a timer for each player's turn (cards will auto turn face-down after a set time)
+Adding difficulty levels/options with adding a # of cards that don't have any matches
+Choose the number of players (2 or more)
+Being able to play the game on 2 different computers/browsers, online
