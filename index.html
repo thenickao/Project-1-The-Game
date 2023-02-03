@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"defer></script>
+    <title>Matching Moodiez</title>
+</head>
+<body style="background-image: url(media/moodiez_bg.png); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center;">
+    
+    <h1 id="titleText">Matching Moodiez</h1>
+
+    <button id="start-button">Start Game</button>
+
+    <h2 id="subTitle">Instructions:</h2>
+
+    <p id="instructions">
+        Welcome to Matching Moodiez! This is a 2-Player game where memory is key. Players will take turns matching cards. If a Player finds a match, they earn a point and get to take another turn. Once all matches have been made, the Player with the most points is declared the winner! However, if both Players have the same number of points, the game will result in a draw.<br><br>Click "Start Game" when you are ready to play!
+    </p>
+
+    <section id="moodiez-board">
+        <div class="moodiez-card" data-match="ape2">
+            <img class="card front" src="./media/ape_2.png" alt="ape 2"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="ape2">
+            <img class="card front" src="./media/ape_2.png" alt="ape 2"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="apefalcon">
+            <img class="card front" src="./media/ape_falcon.png" alt="ape falcon"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="apefalcon">
+            <img class="card front" src="./media/ape_falcon.png" alt="ape falcon"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="apeking">
+            <img class="card front" src="./media/ape_king.png" alt="ape king"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="apeking">
+            <img class="card front" src="./media/ape_king.png" alt="ape king"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="apemcd">
+            <img class="card front" src="./media/ape_mcd.png" alt="ape mcd"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="apemcd">
+            <img class="card front" src="./media/ape_mcd.png" alt="ape mcd"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="apesamurai">
+            <img class="card front" src="./media/ape_samurai.png" alt="ape samurai"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="apesamurai">
+            <img class="card front" src="./media/ape_samurai.png" alt="ape samurai"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="apetoga">
+            <img class="card front" src="./media/ape_toga.png" alt="ape toga"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="apetoga">
+            <img class="card front" src="./media/ape_toga.png" alt="ape toga"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="bear2">
+            <img class="card front" src="./media/bear_2.png" alt="bear 2"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="bear2">
+            <img class="card front" src="./media/bear_2.png" alt="bear 2"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="bearfalcon">
+            <img class="card front" src="./media/bear_falcon.png" alt="bear falcon"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="bearfalcon">
+            <img class="card front" src="./media/bear_falcon.png" alt="bear falcon"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="bearking">
+            <img class="card front" src="./media/bear_king.png" alt="bear king"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="bearking">
+            <img class="card front" src="./media/bear_king.png" alt="bear king"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="bearmcd">
+            <img class="card front" src="./media/bear_mcd.png" alt="bear mcd"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="bearmcd">
+            <img class="card front" src="./media/bear_mcd.png" alt="bear mcd"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="bearmoon">
+            <img class="card front" src="./media/bear_moon.png" alt="bear moon"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="bearmoon">
+            <img class="card front" src="./media/bear_moon.png" alt="bear moon"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="beartoga">
+            <img class="card front" src="./media/bear_toga.png" alt="bear toga"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="beartoga">
+            <img class="card front" src="./media/bear_toga.png" alt="bear toga"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="bull2">
+            <img class="card front" src="./media/bull_2.png" alt="bull 2"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="bull2">
+            <img class="card front" src="./media/bull_2.png" alt="bull 2"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="bullfalcon">
+            <img class="card front" src="./media/bull_falcon.png" alt="bull falcon"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="bullfalcon">
+            <img class="card front" src="./media/bull_falcon.png" alt="bull falcon"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="bullhood">
+            <img class="card front" src="./media/bull_hood.png" alt="bull hood"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="bullhood">
+            <img class="card front" src="./media/bull_hood.png" alt="bull hood"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="bullking">
+            <img class="card front" src="./media/bull_king.png" alt="bull king"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="bullking">
+            <img class="card front" src="./media/bull_king.png" alt="bull king"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="bullmcd">
+            <img class="card front" src="./media/bull_mcd.png" alt="bull mcd"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="bullmcd">
+            <img class="card front" src="./media/bull_mcd.png" alt="bull mcd"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="bullsamurai">
+            <img class="card front" src="./media/bull_samurai.png" alt="bull samurai"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+        <div class="moodiez-card" data-match="bullsamurai">
+            <img class="card front" src="./media/bull_samurai.png" alt="bull samurai"/>
+            <img class="card back" src="./media/moodiez_logo_cropped.png" alt="card-back"/>
+        </div>
+    </section>
+    
+    <h2 class="player" id="player1">Player 1</h2>
+    <h2 class="score" id="player1Score"></h2>
+    <h2 class="player" id="player2">Player 2</h2>
+    <h2 class="score" id="player2Score"></h2>
+
+    <p id="player1win">Player 1 Wins!</p>
+    <p id="player2win">Player 2 Wins!</p>
+    <p id="draw">It's a draw!</p>
+    <a id="playagain" href="">play again?</a>
+
+</body>
+</html>
