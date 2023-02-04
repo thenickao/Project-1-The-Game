@@ -20,6 +20,8 @@ const player1Wins = document.getElementById("player1win")
 const player2Wins = document.getElementById("player2win")
 const draw = document.getElementById("draw")
 const playAgain = document.getElementById("playagain")
+const player1Turn = document.getElementById("player1Turn")
+const player2Turn = document.getElementById("player2Turn")
 
 // start button that hides the landing page and shows the actual game
 startButton.addEventListener("click", () => {
@@ -32,6 +34,7 @@ startButton.addEventListener("click", () => {
     player1Score.style.display = "inline";
     player2Score.style.display = "inline";
     game.style.display = "flex";
+    player1Turn.style.display = "block";
 })
 
 // player default values
@@ -46,8 +49,18 @@ let scores = {
 function playerTurn() {
     if (currentPlayer === 0) {
         currentPlayer = 1
+        player2.style.color = "rgb(0, 0, 0)"
+        player2.style.backgroundColor = "rgba(255, 255, 255, 0.80)"
+        player2.style.border = "rgb(0, 0, 0) solid 5px"
+        player1Turn.style.display = "none"
+        player2Turn.style.display = "block"
     } else {
         currentPlayer = 0
+        player1.style.color = "rgb(0, 0, 0)"
+        player1.style.backgroundColor = "rgba(255, 255, 255, 0.80)"
+        player1.style.border = "rgb(0, 0, 0) solid 5px"
+        player2Turn.style.display = "none"
+        player1Turn.style.display = "block"
     }
     flash = false
     currentPlayerStyle()
@@ -161,9 +174,12 @@ function flipCard() {
                 // stopping the player from flipping a 3rd+ card & "resets" the unmatched cards 
                 reClick()
             }, 3000)
-            clearInterval(flashInterval)
-            // because the cards do not match, it is the other player's turn
-            playerTurn()
+            // stopping the player change until after the cards have flipped face-down
+            setTimeout(() => {
+                clearInterval(flashInterval)
+                // because the cards do not match, it is the other player's turn
+                playerTurn()
+            }, 3000)
         }
     }
 }
